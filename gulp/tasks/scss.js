@@ -38,18 +38,23 @@ export const scss = () => {
                 )
             )
         )
-        .pipe(
-            app.plugins.if(
-                app.isBuild,
-                autoprefixer({
-                    grid: true,
-                    overrideBrowserslist: ['last 3 versions'],
-                    cascade: true
-                })
-            )
-        )
+        // .pipe(
+        //     app.plugins.if(
+        //         app.isBuild,
+        //         autoprefixer({
+        //             grid: true,
+        //             overrideBrowserslist: ['last 3 versions'],
+        //             cascade: true
+        //         })
+        //     )
+        // )
+        .pipe(autoprefixer({
+            grid: true,
+                overrideBrowserslist: ['last 3 versions'],
+                cascade: true
+        }))
         //раскомментировать, если нужен несжатый дубликат файла css
-        .pipe(app.gulp.dest(app.path.build.css))
+        // .pipe(app.gulp.dest(app.path.build.css))
         .pipe(app.plugins.if(
             app.isBuild,
             cleanCss()
