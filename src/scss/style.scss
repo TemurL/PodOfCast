@@ -10,6 +10,8 @@
     //CONTAINER
     --container-max-width: 1160px;
     --container-paddind-inline: 30px;
+    //OTHERS
+    --header-height: 134px;
 }
 
 html {
@@ -45,36 +47,55 @@ ul {
     padding-inline: var(--container-paddind-inline);
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+
+}
+
 .nav-full__ul {
     display: flex;
     align-items: center;
     padding: 28px 0;
+}
+.nav-full__logo {
+    margin-right: 125px;
+}
 
-    .nav-full__logo {
-        margin-right: 125px;
+.nav-full__li-menu {
+    margin: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    transition: 0.2s;
+
+    svg {
+        position: relative;
+        top: 2px;
+        left: 4px;
     }
-
-    .nav-full__li-menu {
-        margin: 0 30px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 160%;
-
-        svg {
-            position: relative;
-            top: 2px;
-            left: 4px;
-        }
+    &:nth-child(4) {
+        margin-right: auto;
     }
-
-    .nav-full__li:nth-last-child(2) {
-        margin-left: auto;
-    }
-
-    .nav-full__li:last-child > * {
-        margin-right: 0;
+        &:hover {
+        color: var(--color-vermillion-gray);
     }
 }
+
+.nav-full__li:last-child > * {
+    margin-right: 0;
+}
+
+.nav-full__mob-menu-button {
+    display: none;
+    margin-left: auto;
+    height: calc(var(--header-height) * 0.5);
+    aspect-ratio: 1;
+    background-color: #4D4D4D;
+}
+
 
 .button {
     display: block;
@@ -111,5 +132,43 @@ ul {
 
 .button_filled:hover {
     transform: translateY(-3px);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
+.title {
+    font-size: 3.7em;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -1.2px;
+    text-align: center
+}
+
+.hero__title {
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: -3.9px;
+    margin-bottom: 30px;
+}
+
+.parag {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    text-align: center;
+    color: var(--color-davys-grey);
+}
+
+.accent-color-text {
+    color: var(--color-vermillion-gray);
+}
+
+.hero {
+    background-image: url('../img/vectors/Hero-Shape-Swirl-full.svg'), url('../img/decor/Hero-Shape-2.png');
+    background-repeat: no-repeat;
+    background-position-x: -100px, calc(100% - 60px);
+    background-position-y: center;
+    padding-block: var(--header-height) 60px;
+}
+
+@import './pages/index.scss';
+@import './media.scss';

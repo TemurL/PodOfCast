@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.min.css">
-        <title>Document</title>
-    </head>
+    @@include('./html/head.html', {
+        title: 'Main'
+    })
     <body class="body">
         <div class="wrapper">
             @@include('./html/header.html')
             <main class="main" id="main">
-
+                <section class="hero index__hero">
+                    <div class="container">
+                        <div class="hero__content">
+                            <h1 class="title hero__title">Your Daily <br><span class="accent-color-text">Podcast</span></h1>
+                            <p class="parag hero__parag">
+                                We cover all kinds of categories and <br>a weekly special guest.
+                            </p>
+                            <button class="button hero__button button_filled button_big button_shadow">subscribe</button>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
         <script src="js/app.min.js"></script>
