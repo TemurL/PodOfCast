@@ -1,2 +1,115 @@
 @import 'fonts.scss';
 
+:root {
+    // COLORS
+    --color-pewter-blue: #81ADC8;
+    --color-davys-grey: #4D4D4D;
+    --color-vermillion-gray: #CD4631;
+    --color-champagne: #F7EDE8;
+    --color-alice-blue: #EDF3F7;
+    //CONTAINER
+    --container-max-width: 1160px;
+    --container-paddind-inline: 30px;
+}
+
+html {
+    font-family: 'MontserratAlternates',sans-serif;
+    font-size: 16px;
+    background-color: var(--color-champagne);
+}
+
+* {
+    box-sizing: border-box;
+    // outline: 1px solid grey;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding-inline: var(--container-paddind-inline);
+}
+
+.nav-full__ul {
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+
+    .nav-full__logo {
+        margin-right: 125px;
+    }
+
+    .nav-full__li-menu {
+        margin: 0 30px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 160%;
+
+        svg {
+            position: relative;
+            top: 2px;
+            left: 4px;
+        }
+    }
+
+    .nav-full__li:nth-last-child(2) {
+        margin-left: auto;
+    }
+
+    .nav-full__li:last-child > * {
+        margin-right: 0;
+    }
+}
+
+.button {
+    display: block;
+    --_fill-color: var(--fill-color, transparent);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid black;
+    color: black;
+    background-color: var(--_fill-color);
+    margin-inline: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.button_big {
+    padding: 24px 48px;
+}
+
+.button_filled {
+    color: white;
+    --fill-color: black;
+}
+
+.button_shadow {
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button_transparent:hover {
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button_filled:hover {
+    transform: translateY(-3px);
+}
+
