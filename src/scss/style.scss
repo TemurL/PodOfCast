@@ -4,7 +4,7 @@
     // COLORS
     --color-pewter-blue: #81ADC8;
     --color-davys-grey: #4D4D4D;
-    --color-vermillion-gray: #CD4631;
+    --color-vermillion: #CD4631;
     --color-champagne: #F7EDE8;
     --color-alice-blue: #EDF3F7;
     //CONTAINER
@@ -95,7 +95,7 @@ section {
         margin-right: auto;
     }
         &:hover {
-        color: var(--color-vermillion-gray);
+        color: var(--color-vermillion);
     }
 }
 
@@ -167,7 +167,7 @@ section {
 }
 
 .accent-color-text {
-    color: var(--color-vermillion-gray);
+    color: var(--color-vermillion);
 }
 
 .nav-full__mob-menu-button {

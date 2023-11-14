@@ -12,7 +12,6 @@
     justify-content: space-between;
     gap: 20px;
     width: max-content;
-    transform-origin: right top;
     padding: 0 var(--container-paddind-inline);
     animation-name: albums-row;
     animation-duration: 30s;
@@ -40,7 +39,7 @@
     transition: 0.3s;
 
     &:hover {
-        top: -6px;
+        top: -12px;
         box-shadow: 12px 12px 0px 0px #81ADC8;
     }
 }
@@ -211,6 +210,10 @@ path {
     position: relative;
 }
 
+.comments__wide-content {
+    position: relative;
+}
+
 .comments__title {
     position: relative;
 }
@@ -221,23 +224,67 @@ path {
 }
 
 .comments__cards {
-    display: flex;
-    align-items: center;
     margin-block: 60px;
-    gap: 10px;
     overflow: scroll;
-    padding-block: 2rem;
+    position: relative;
+    box-sizing: content-box;
 }
 
 .comment {
     padding: 40px;
     background-color: #FFF;
     border-radius: 8px;
-    min-width: 570px;
+    width: 570px;
+    transition: 0.3s;
+    position: absolute;
+    left: 50%;
+    scale: 0.1;
+    translate: -50%;
+    z-index: 0;
+    cursor: pointer;
+    user-select: none;
 }
 
 .comment__text {
     font-weight: 500;
     font-size: 22.65px;
     line-height: 160%;
+}
+
+.active-card {
+    scale: 1;
+    z-index: 1;
+    cursor: auto;
+    user-select: auto;
+}
+.prev-card,
+.next-card {
+    left: 25%;
+    scale: 0.7;
+    opacity: 0.5;
+    z-index: 0;
+}
+.next-card {
+    left: 75%;
+}
+
+.comments__controls {
+    text-align: center;
+}
+
+.comments__control-prev,
+.comments__control-next {
+    user-select: none;
+    margin-inline: 5px;
+    path {
+        transition: 0.3;
+        stroke: black;
+    }
+}
+.comments__control-prev:hover,
+.comments__control-next:hover {
+    path {
+        transition: 0.3;
+        stroke: var(--color-vermillion);
+    }
 }
