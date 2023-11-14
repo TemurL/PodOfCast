@@ -100,6 +100,10 @@ path {
     }
 }
 
+.supported-by {
+    padding-bottom: 130px;
+}
+
 .supported-by__content {
     display: flex;
     align-items: center;
@@ -113,4 +117,127 @@ path {
     font-size: 22.6px;
     font-weight: 700;
     line-height: 140%;
+}
+
+.tips {
+    background-color: #FFF;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.tips__quotes {
+    margin-top: 30px;
+}
+
+.tips__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin-block: 100px;
+
+    & > * {
+        text-align: center;
+        flex: 1;
+    }
+}
+
+.tips__review {
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 8px;
+    background-color: var(--color-champagne);
+}
+
+.tips__review-text {
+    font-weight: 700;
+    font-size: 36.6px;
+    line-height: 140%;
+    letter-spacing: -0.7px;
+    margin-block: 35px;
+}
+
+
+.user-info {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 500;
+}
+
+.user-info__avatar,
+.user-info__comp-logo {
+    position: relative;
+    vertical-align: middle;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin-inline: 8px;
+}
+
+.user-info__avatar {
+    bottom: 3px;
+    margin-left: 0;
+}
+
+.user-info__position {
+    font-weight: 700;
+}
+
+.decor {
+    position: absolute;
+}
+
+// .tips__review-decor-1, 
+// .tips__review-decor-2 {
+//     position: absolute;
+// }
+
+.decor-scribble {
+    top: -70px;
+    left: calc(50% - 75px);
+}
+
+.tips__review-decor-1 {
+    top: -50px;
+    right: -50px;
+}
+.tips__review-decor-2 {
+    bottom: 30px;
+    left: -30px;
+}
+
+.comments {
+    background-color: var(--color-alice-blue);
+    position: relative;
+}
+
+.comments__title {
+    position: relative;
+}
+
+.comments__title-decor {
+    left: 130px;
+    top: -70px;
+}
+
+.comments__cards {
+    display: flex;
+    align-items: center;
+    margin-block: 60px;
+    gap: 10px;
+    overflow: scroll;
+    padding-block: 2rem;
+}
+
+.comment {
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 8px;
+    min-width: 570px;
+}
+
+.comment__text {
+    font-weight: 500;
+    font-size: 22.65px;
+    line-height: 160%;
 }
