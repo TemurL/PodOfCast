@@ -8,7 +8,7 @@
     --color-champagne: #F7EDE8;
     --color-alice-blue: #EDF3F7;
     //CONTAINER
-    --container-max-width: 1160px;
+    --container-max-width: 1220px;
     --container-paddind-inline: 30px;
     //OTHERS
     --header-height: 134px;
@@ -41,6 +41,10 @@ ul {
     margin: 0;
 }
 
+section {
+    padding-block: 60px;
+}
+
 .container {
     max-width: var(--container-max-width);
     margin: 0 auto;
@@ -51,14 +55,25 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    height: var(--header-height);
+    transition: 0.3s;
+    z-index: 10;
+}
 
+.header_after-scroll {
+    box-shadow: 0 0 19px 1px #00000080;
+    background-color: var(--color-champagne);
+}
+
+.scroll-lock {
+    height: 100%;
+    overflow: hidden;
 }
 
 .nav-full__ul {
     display: flex;
     align-items: center;
-    padding: 28px 0;
+    padding: 10px 0;
+    height: var(--header-height);
 }
 .nav-full__logo {
     margin-right: 125px;
@@ -86,14 +101,6 @@ ul {
 
 .nav-full__li:last-child > * {
     margin-right: 0;
-}
-
-.nav-full__mob-menu-button {
-    display: none;
-    margin-left: auto;
-    height: calc(var(--header-height) * 0.5);
-    aspect-ratio: 1;
-    background-color: #4D4D4D;
 }
 
 
@@ -161,6 +168,70 @@ ul {
 .accent-color-text {
     color: var(--color-vermillion-gray);
 }
+
+.nav-full__mob-menu-button {
+    display: none;
+    margin-left: auto;
+    height: calc(var(--header-height) * 0.5);
+    aspect-ratio: 1;
+    background-image: url('../img/icons/burger-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.nav-mob__close-button {
+    display: block;
+    margin-left: auto;
+    height: calc(var(--header-height) * 0.5);
+    aspect-ratio: 1;
+    background-image: url('../img/icons/burger-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.nav-full__mob-menu-button_active {
+    background-image: url('../img/icons/Cross.svg');
+    rotate: 180deg;
+}
+
+.nav-mob__ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    height: 100dvh;
+    width: 100vw;
+    padding: 2rem 2rem 2rem 5rem;
+    background-color: var(--color-champagne);
+    box-shadow: 0 0 47px 20px #3833339e;
+    transition: 0.5s;
+    transform: translateX(100%);
+    overflow: auto;
+}
+
+.nav-mob__ul_active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.nav-mob__li-menu { 
+    font-size: 4em;
+    font-weight: 700;
+    text-align: end;
+    padding: 3rem 0.5rem;
+
+    svg {
+        display: none;
+    }
+}
+
+
 
 .hero {
     background-image: url('../img/vectors/Hero-Shape-Swirl-full.svg'), url('../img/decor/Hero-Shape-2.png');

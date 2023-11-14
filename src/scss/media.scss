@@ -5,6 +5,9 @@
     }
 }
 @media screen and (max-width: 992px) {
+    :root {
+        --header-height: 95px;
+    }
     .hero {
         background: none;
     }
@@ -15,7 +18,10 @@
         display: none;
     }
     .nav-full__mob-menu-button {
-        display: inline;
+        display: block;
+    }
+    .nav-mob__ul {
+        display: block;
     }
 }
 @media screen and (max-width: 768px) {
