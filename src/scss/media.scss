@@ -1,10 +1,25 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .hero {
         background-size: 15vw, 10vw;
         background-position: 30px, calc(100% - 30px);
     }
+
+    .tips__review-decor-1 {
+        width: 100px;
+        right: 20px;
+    }
+    .tips__review-decor-2 {
+        bottom: -26px;
+        width: 60px;
+        left: 5px;
+    }
 }
 @media screen and (max-width: 992px) {
+    // не уверен 
+    body {
+        overflow-x: hidden;
+    }
+    
     :root {
         --header-height: 95px;
     }
@@ -23,12 +38,42 @@
     .nav-mob__ul {
         display: block;
     }
+    .decor-scribble {
+        display: none;
+    }
 }
 @media screen and (max-width: 768px) {
-    //
+    section {
+        padding-block: 20px;
+    }
+
+    .nav-full__ul {
+        .button {
+            display: none;
+        }
+    }
+    .tips__cards {
+        flex-direction: column;
+        gap: 0;
+    }
+    .comment {
+        width: 100%;
+        opacity: 0;
+    }
+    .albums-row__album {
+        min-width: 100px;
+    }
+    .active-card {
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 480px) {
-    //
+    .hero__title {
+        font-size: 50px;
+    }
+    .tips__review-text {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 320px) {
     //

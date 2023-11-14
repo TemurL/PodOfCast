@@ -107,9 +107,14 @@ path {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-block: 40px;
     padding-inline-end: 70px;
     border-block: 2px solid var(--color-davys-grey);
+
+    img {
+        margin-block: 1rem;
+    }
 }
 
 .supported-by__text {
@@ -144,7 +149,7 @@ path {
 .tips__review {
     position: relative;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 15px;
     border-radius: 8px;
     background-color: var(--color-champagne);
 }
@@ -220,7 +225,7 @@ path {
 
 .comments__title-decor {
     left: 130px;
-    top: -70px;
+    top: -100px;
 }
 
 .comments__cards {
@@ -228,6 +233,7 @@ path {
     overflow: scroll;
     position: relative;
     box-sizing: content-box;
+    overflow: hidden;
 }
 
 .comment {
