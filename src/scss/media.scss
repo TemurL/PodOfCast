@@ -42,6 +42,10 @@
         display: none;
     }
 
+    .recent-episodes__decore {
+        display: none;
+    }
+
 
     .benefits__cards {
         grid-template-columns: 1fr 1fr;
@@ -56,8 +60,13 @@
     }
 }
 @media screen and (max-width: 768px) {
+    :root {
+        --container-paddind-inline: 15px;
+    }
+
+
     section {
-        padding-block: 20px;
+        padding-block: 50px;
     }
     
     .nav-full__ul {
@@ -85,6 +94,10 @@
         --header-height: 55px;
     }
 
+    .decor {
+        display: none;
+    }
+
     .title {
         font-size: 2.7rem;
     }
@@ -103,6 +116,21 @@
 
     .benefits__cards {
         grid-template-columns: 1fr;
+    }
+
+    .episode__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .episode__album {
+        min-width: none;
+        width: 100%;
+    }
+
+    .episode__footer {
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 @media screen and (max-width: 320px) {

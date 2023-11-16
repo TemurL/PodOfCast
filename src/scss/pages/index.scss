@@ -329,9 +329,9 @@ path {
 }
 
 .recent-episodes__decore {
-    top: -40px;
-    right: -40px;
-    width: 70px;
+    top: 75px;
+    left: 70%;
+    width: 100px;
 }
 
 .episodes-block {
@@ -408,13 +408,14 @@ path {
 .episode__footer {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .episode__tag {
     font-size: 12px;
     font-weight: 500;
     line-height: 160%;
-    margin-right: 6px;
+    margin: 3px 6px;
     color: var(--color-davys-grey);
     padding: 6px 12px;
     border: 1px solid var(--color-davys-grey);
