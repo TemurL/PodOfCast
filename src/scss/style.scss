@@ -18,6 +18,7 @@ html {
     font-family: 'MontserratAlternates',sans-serif;
     font-size: 16px;
     background-color: var(--color-champagne);
+    scroll-behavior: smooth;
 }
 
 * {
@@ -42,7 +43,7 @@ ul {
 }
 
 section {
-    padding-block: 60px;
+    padding-block: 120px;
 }
 
 .container {
@@ -75,8 +76,9 @@ section {
     padding: 10px 0;
     height: var(--header-height);
 }
-.nav-full__logo {
+.nav-full__main-logo {
     margin-right: 125px;
+    width: calc(var(--header-height) * 0.7);
 }
 
 .nav-full__li-menu {
@@ -118,6 +120,7 @@ section {
     margin-inline: 10px;
     cursor: pointer;
     transition: 0.25s;
+    width: max-content;
 }
 
 .button_big {
@@ -173,7 +176,7 @@ section {
 .nav-full__mob-menu-button {
     display: none;
     margin-left: auto;
-    height: calc(var(--header-height) * 0.5);
+    height: calc(var(--header-height) * 0.55);
     aspect-ratio: 1;
     background-image: url('../img/icons/burger-menu.svg');
     background-repeat: no-repeat;
@@ -207,7 +210,7 @@ section {
     opacity: 0;
     height: 100dvh;
     width: 100vw;
-    padding: 2rem 2rem 2rem 5rem;
+    padding: 2rem 2rem 0 1rem;
     background-color: var(--color-champagne);
     box-shadow: 0 0 47px 20px #3833339e;
     transition: 0.5s;
@@ -222,7 +225,7 @@ section {
 
 
 .nav-mob__li-menu { 
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
     text-align: end;
     padding: 3rem 0.5rem;

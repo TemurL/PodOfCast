@@ -21,10 +21,10 @@
     }
     
     :root {
-        --header-height: 95px;
+        --header-height: 70px;
     }
     .hero {
-        background: none;
+        background: none !important;
     }
     .nav-full__logo {
         margin-right: auto;
@@ -41,12 +41,25 @@
     .decor-scribble {
         display: none;
     }
+
+
+    .benefits__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .benefits__decor-1 {
+        display: none;
+    }
+
+    .episodes-block {
+        grid-template-columns: 1fr;
+    }
 }
 @media screen and (max-width: 768px) {
     section {
         padding-block: 20px;
     }
-
+    
     .nav-full__ul {
         .button {
             display: none;
@@ -61,18 +74,35 @@
         opacity: 0;
     }
     .albums-row__album {
-        min-width: 100px;
+        min-width: max-content;
     }
     .active-card {
         opacity: 1;
     }
 }
 @media screen and (max-width: 480px) {
+    :root {
+        --header-height: 55px;
+    }
+
+    .title {
+        font-size: 2.7rem;
+    }
+    
     .hero__title {
         font-size: 50px;
     }
+
+    .comments__controls {
+        display: none;
+    }
+
     .tips__review-text {
         font-size: 20px;
+    }
+
+    .benefits__cards {
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width: 320px) {
