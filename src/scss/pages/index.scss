@@ -519,3 +519,31 @@ path {
     text-align: start;
     font-size: 14px;
 }
+
+.plan.family {
+    .plan__main,
+    .plan__footer {
+        border-color: var(--color-vermillion);
+        background-color: var(--color-champagne);
+    }
+}
+
+.most-popular {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 160%;
+    color: #fff;
+    background-color: var(--color-vermillion);
+    padding: 6px;
+    border-radius: 4px;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    vertical-align: middle;
+    margin-inline-start: 10px;
+}
+
+.article-and-news {
+    background-color: #fff;
+    position: relative;
+}
