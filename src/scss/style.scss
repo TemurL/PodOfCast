@@ -96,7 +96,7 @@ section {
     &:nth-child(4) {
         margin-right: auto;
     }
-        &:hover {
+    &:hover {
         color: var(--color-vermillion);
     }
 }
@@ -105,6 +105,43 @@ section {
     margin-right: 0;
 }
 
+
+.nav-full__li-menu.more {
+    position: relative;
+    cursor:pointer;
+    .nav-full__more-window {
+        visibility: hidden;
+        position: absolute;
+        top: 0%;
+        opacity: 0;
+        transition: 0.3s;
+        transition-property: top opacity;
+        transition-delay: 0.5s;
+        width: max-content;
+        border-radius: 8px;
+        box-shadow: 0px 0px 11px 0px #00000033;
+        left: -2rem;
+        background-color: #fff;
+        padding: 0.5rem 2rem;
+        color: black;
+
+        .nav-full__more-li {
+            margin-block: 1rem;
+            &:hover {
+                color: var(--color-vermillion);
+            }
+        }
+    }
+
+    &:hover {
+        .nav-full__more-window {
+            visibility: visible;
+            transition-delay: 0.15s;
+            opacity: 1;
+            top: 150%;
+        }
+    }
+}
 
 .button {
     display: block;
