@@ -280,6 +280,21 @@ hr {
 }
 
 
+.beta {
+    // display: block;
+    // width: max-content;
+    text-align: center;
+    color: var(--color-vermillion);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
+    padding: 0 6px;
+    border-radius: 4px;
+    border: 1px solid var(--color-vermillion);
+    text-transform: uppercase;
+    // margin-inline: auto;
+}
+
 
 .hero {
     background-image: url('../img/vectors/Hero-Shape-Swirl-full.svg'), url('../img/decor/Hero-Shape-2.png');
@@ -288,6 +303,32 @@ hr {
     background-position-y: center;
     padding-block: var(--header-height) 60px;
 }
+
+
+.footer__upside {
+    background-color: var(--color-alice-blue);
+    text-align: center;
+    position: relative;
+    border-bottom: 1.5px solid var(--color-davys-grey);
+    .album__platforms > * > * path {
+        fill: black;
+    }
+}
+
+.footer__downside {
+    background-color: #fff;
+    
+}
+
+.footer__title {
+    margin: 25px 0;
+}
+
+.footer__button {
+    margin: 140px auto 1.5rem;
+}
+
+
 
 @import './pages/index.scss';
 @import './media.scss';
