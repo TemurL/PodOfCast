@@ -1062,12 +1062,35 @@
                     <div class="container">
                         <h2 class="title article-and-news__title">Article and News</h2>
                         <p class="parag article-and-news__parag">News, tips, tricks and more</p>
-                        <div class="article-and-news__two-big-cards">
-                            <div class="article-and-news__card"></div>
+                        <div class="article-and-news__cards">
+                            <a href="">
+                                @@include('./html/articleCard.html', {
+                                    parent: 'article-and-news',
+                                    category: 'podcast',
+                                    title: 'Setup your own podcast',
+                                    parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
+                                    tags: 'business startup',
+                                    date: 'Sep 14, 2021',
+                                    id: '001'
+                                })
+                            </a>
+                            <a href="">
+                                @@include('./html/articleCard.html', {
+                                    parent: 'article-and-news',
+                                    category: 'TIPS & TRICK',
+                                    title: 'Doodle artwork 101',
+                                    parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
+                                    tags: 'art creative tips-and-tricks',
+                                    date: 'Sep 12, 2021',
+                                    id: '002'
+                                })
+                            </a>
                         </div>
+                        <a class="button button_big button_filled button_shadow article-card__button" href="">browse all</a>
                     </div>
                     <img class="decor decor-scribble" src="@img/decor/Scribble-black.png" alt="">
                 </section>
+                @@include('./html/footer.html')
             </main>
         </div>
         <script src="js/app.min.js"></script>
