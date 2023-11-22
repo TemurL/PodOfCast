@@ -307,17 +307,18 @@ hr {
 
 .footer__upside {
     background-color: var(--color-alice-blue);
+    background-blend-mode: multiply;
+    background-image: url('@img/Home-footer.png'), url('@img/play-footer.png');
+    background-repeat: no-repeat;
+    background-position-x: left, right;
+    background-position-y: bottom;
+    background-size: 23%;
     text-align: center;
     position: relative;
     border-bottom: 1.5px solid var(--color-davys-grey);
     .album__platforms > * > * path {
         fill: black;
     }
-}
-
-.footer__downside {
-    background-color: #fff;
-    
 }
 
 .footer__title {
@@ -328,6 +329,70 @@ hr {
     margin: 140px auto 1.5rem;
 }
 
+.footer__downside {
+    background-color: #fff;
+    padding-bottom: 80px;
+
+    hr {
+        margin-top: 100px
+    }
+}
+
+.footer__downside-parag {
+    text-align: start;
+}
+
+.footer__content_flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 80px;
+
+    & * {
+        flex-basis: 33%;
+    }
+}
+
+.footer__downblock-1 {
+    svg:hover path {
+        fill: var(--color-vermillion);
+    }
+}
+
+.footer__downblock-2 {
+    display: flex;
+    gap: 60px;
+
+    li {
+        margin-block: 10px;
+        line-height: 160%;
+        transition: 0.3s;
+        font-weight: 500;
+        &:hover {
+            color: var(--color-vermillion);
+        }
+    }
+}
+
+.footer__downblock-3 {
+    width: max-content;
+    #spotify-logo,
+    #google-podcasts-logo,
+    #youtube-logo {
+        width: 120px;
+        margin-inline: 5px
+    }
+    .footer__platforms {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 60px
+    }
+}
+
+.footer__footer {
+    @extend .episode__footer
+}
 
 
 @import './pages/index.scss';
