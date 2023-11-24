@@ -312,7 +312,7 @@ hr {
     background-repeat: no-repeat;
     background-position-x: left, right;
     background-position-y: bottom;
-    background-size: 23%;
+    background-size: clamp(23%, 23%, 100px);
     text-align: center;
     position: relative;
     border-bottom: 1.5px solid var(--color-davys-grey);

@@ -144,6 +144,10 @@
         width: 100%;
     }
 
+    .article-and-news__cards {
+        grid-template-columns: 1fr;
+    }
+
 }
 @media screen and (max-width: 320px) {
     //
