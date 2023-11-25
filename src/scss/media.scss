@@ -61,6 +61,25 @@
     .sponsor__plans {
         flex-direction: column;
     }
+
+    .hero__stat-cards {
+        transform: none;
+    }
+    .about__hero {
+        padding-bottom: 120px;
+    }
+    .about__hero + section {
+        padding-top: 120px;
+    }
+
+    .founders__card {
+        flex-direction: column;
+
+        & > * {
+            flex: none;
+            width: 100%;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     :root {
@@ -99,6 +118,10 @@
     }
     .active-card {
         opacity: 1;
+    }
+
+    .founders__cards {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 480px) {

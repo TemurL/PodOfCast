@@ -34,6 +34,14 @@ html, body {
 a {
     text-decoration: none;
     color: inherit;
+
+    &.inline-link {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 ul {
@@ -168,7 +176,7 @@ hr {
 }
 
 .button_big {
-    padding: 24px 48px;
+    padding: 20px 40px;
 }
 
 .button_filled {
@@ -347,17 +355,15 @@ hr {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 80px;
-
-    & * {
-        flex-basis: 33%;
-    }
+    gap: 60px;
 }
 
 .footer__downblock-1 {
     svg:hover path {
         fill: var(--color-vermillion);
     }
+
+    flex-basis: 200px;
 }
 
 .footer__downblock-2 {
@@ -385,15 +391,17 @@ hr {
     }
     .footer__platforms {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
         margin-bottom: 60px
     }
 }
 
 .footer__footer {
-    @extend .episode__footer
+    @extend .episode__footer;
 }
 
 
 @import './pages/index.scss';
+@import './pages/about.scss';
 @import './media.scss';
