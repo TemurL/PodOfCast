@@ -231,23 +231,28 @@
             color: var(--color-davys-grey);
             font-weight: 500;
         }
-    }
 
-    input:not([type="submit"]):focus,
-    textarea:focus {
-        outline: none;
-        border-color: var(--color-vermillion);
+        &:focus {
+            outline: none;
+            border-color: var(--color-vermillion); 
+        }
     }
 
     #submit {
-        margin: 2rem auto;
+        margin: 0 auto;
     }
 
+    .get-in-touch__form-footer {
+        margin-block: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
     
 
     #message,
     label[for="message"],
-    #submit {
+    .get-in-touch__form-footer {
         column-span: all;
     }
 }

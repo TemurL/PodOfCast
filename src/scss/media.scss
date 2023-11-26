@@ -167,11 +167,23 @@
         width: 100%;
     }
 
+    .our-sponsors__cards img {
+        width: 180px;
+    }
+
     .article-and-news__cards {
         grid-template-columns: 1fr;
     }
 
+    .get-in-touch__form .get-in-touch__form-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
 }
+
+
 @media screen and (max-width: 320px) {
     //
 }
