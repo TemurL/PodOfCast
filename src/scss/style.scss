@@ -65,6 +65,11 @@ hr {
     margin: 0 auto;
     padding-inline: var(--container-paddind-inline);
 }
+.container_small {
+    max-width: 766px;
+    margin: 0 auto;
+    padding-inline: var(--container-paddind-inline);
+}
 
 .header {
     position: fixed;
