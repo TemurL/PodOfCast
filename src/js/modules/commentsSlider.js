@@ -1,7 +1,7 @@
 export const commentsSlider = () => {
-    const commentsColl = document.getElementsByClassName('comment');
+    const commentsColl = document.getElementsByClassName('card');
     const container = commentsColl[0].parentElement;
-    const controls = document.querySelectorAll('.comments__controls > *');
+    const controls = document.querySelectorAll('.comments__controls > *, .our-sponsors__controls > *');
 
     const replaceLastClass = (elem, str) => {
         let lastClass = elem.classList.toString().split(' ')[2];
@@ -38,7 +38,7 @@ export const commentsSlider = () => {
         btn.addEventListener('click', () => {
             let prev = document.querySelector('.prev-card');
             let next = document.querySelector('.next-card');
-            if (btn.classList.contains('comments__control-prev')) return prev.click();
+            if (btn.classList.contains('comments__control-prev') || btn.classList.contains('our-sponsors__control-prev')) return prev.click();
             next.click();
         })
     });

@@ -156,3 +156,40 @@
         }
     }
 }
+
+.our-sponsors {
+    position: relative;
+}
+
+.our-sponsors__title {
+    position: relative;
+}
+
+.our-sponsors__cards {
+    @extend .comments__cards;
+
+    img {
+        display: block;
+        margin: 0 auto 20px;
+        width: 300px;
+    }
+}
+
+.our-sponsors__card {
+    @extend .comments__card;
+
+    border: 1.5px solid black;
+}
+
+.our-sponsors__controls {
+    @extend .comments__controls;
+}
+
+.our-sponsors__control-next,
+.our-sponsors__control-prev {
+    @extend .comments__control-next;
+}
+
+.our-sponsors__title-decor {
+    @extend .comments__title-decor
+}

@@ -211,9 +211,6 @@ path {
     position: relative;
 }
 
-.comments__wide-content {
-    position: relative;
-}
 
 .comments__title {
     position: relative;
@@ -232,7 +229,7 @@ path {
     overflow: hidden;
 }
 
-.comment {
+.comments__card {
     padding: 40px;
     background-color: #FFF;
     border-radius: 8px;
@@ -279,7 +276,7 @@ path {
     user-select: none;
     margin-inline: 5px;
     path {
-        transition: 0.3;
+        transition: 0.3s;
         stroke: black;
     }
 }
