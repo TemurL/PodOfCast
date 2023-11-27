@@ -4,6 +4,10 @@
         background-position: 30px, calc(100% - 30px);
     }
 
+    .episodes__hero {
+        background-position-x: -100px, 105%;
+    }
+
     .tips__review-decor-1 {
         width: 100px;
         right: 20px;
@@ -80,6 +84,37 @@
             width: 100%;
         }
     }
+
+    .episodes__hero {
+        .hero__content {
+            flex-direction: column;
+            align-items: center;
+            margin-block: 75px;
+            gap: 75px;
+            .hero__header {
+                gap: 10px;
+            }
+            .hero__buttons {
+                justify-content: center;
+                margin-block: 70px 30px;
+            }
+    
+            .hero__img {
+                flex-basis: 0;
+                .album__tittle {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .hero__tags {
+            text-align: center;
+        }
+
+        .hero__tags-title {
+            display: none;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     :root {
@@ -122,6 +157,12 @@
 
     .founders__cards {
         flex-direction: column;
+    }
+
+    .episodes__hero {
+        .hero__content {
+            margin-top: 20px;
+        }
     }
 }
 @media screen and (max-width: 480px) {

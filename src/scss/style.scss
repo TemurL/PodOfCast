@@ -166,6 +166,7 @@ hr {
 .button {
     display: block;
     --_fill-color: var(--fill-color, transparent);
+    font-family: 'MontserratAlternates',sans-serif;;
     padding: 12px 24px;
     border-radius: 8px;
     font-size: 14px;
@@ -182,6 +183,7 @@ hr {
 
 .button_big {
     padding: 20px 40px;
+    line-height: 160%;
 }
 
 .button_filled {
@@ -194,7 +196,8 @@ hr {
 }
 
 .button_transparent:hover {
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 .button_filled:hover {
@@ -317,6 +320,14 @@ hr {
     padding-block: var(--header-height) 60px;
 }
 
+.hero__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 70px auto;
+}
 
 .footer__upside {
     background-color: var(--color-alice-blue);
@@ -409,4 +420,5 @@ hr {
 
 @import './pages/index.scss';
 @import './pages/about.scss';
+@import './pages/episodes.scss';
 @import './media.scss';

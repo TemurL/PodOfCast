@@ -2,20 +2,10 @@
     position: relative;
     overflow: visible;
     padding-bottom: 0;
-    .hero__buttons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 70px auto;
-    }
-
     & + section {
         padding-top: 200px;
     }
 }
-
 .hero__stat-cards {
     position: relative;
     transform: translateY(50%);
