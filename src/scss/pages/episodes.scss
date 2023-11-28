@@ -101,3 +101,9 @@
         color: var(--color-vermillion);
     }
 }
+
+.latest-episodes__episodes-block {
+    .sorry {
+        grid-column: 1 / 3;
+    }
+}

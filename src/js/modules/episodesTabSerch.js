@@ -9,6 +9,7 @@ export const episodesTabSerch = () => {
         if (matchEpisodes.length === 0) {
             let parag = document.createElement('p');
             parag.classList.add('parag');
+            parag.classList.add('sorry');
             parag.textContent = 'Sorry, there are no podcasts matching this tag';
             episodesList.appendChild(parag);
         } else {
