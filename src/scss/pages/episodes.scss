@@ -89,6 +89,8 @@
     padding-block: 20px;
     border-bottom: 1.5px solid var(--color-davys-grey);
     margin-top: 100px;
+    gap: 1rem;
+    flex-wrap: wrap;
 
     & > * {
         font-size: 22px;
