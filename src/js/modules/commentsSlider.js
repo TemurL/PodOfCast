@@ -1,4 +1,7 @@
+import { commentsHeightSet } from "./commentsHeightSet.js";
+
 export const commentsSlider = () => {
+    if (document.title != 'Main' && document.title != 'About') return console.log('no sliders');
     const commentsColl = document.getElementsByClassName('card');
     const container = commentsColl[0].parentElement;
     const controls = document.querySelectorAll('.comments__controls > *, .our-sponsors__controls > *');
@@ -85,4 +88,6 @@ export const commentsSlider = () => {
         xDown = null;
         yDown = null;
     };
+
+    commentsHeightSet();
 }

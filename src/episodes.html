@@ -98,6 +98,72 @@
                     </div>
                 </div>
                </section>
+               <section class="latest-episodes">
+                <div class="container">
+                    <div class="latest-episodes__content">
+                        <h2 class="title latest-episodes__title">Latest Episodes</h2>
+                        <ul class="latest-episodes__tabs">
+                            <li class="latest-episodes__tab latest-episodes__tab_active">All</li>
+                            <li class="latest-episodes__tab">Business</li>
+                            <li class="latest-episodes__tab">Wealth</li>
+                            <li class="latest-episodes__tab">Education</li>
+                            <li class="latest-episodes__tab">Health</li>
+                            <li class="latest-episodes__tab">News</li>
+                            <li class="latest-episodes__tab">Tech</li>
+                        </ul>
+                        <div class="episodes-block latest-episodes__episodes-block">
+                            @@include('./html/episodeCard.html', {
+                                parent: 'latest-episodes',
+                                title: 'Are you a Perplexed Mind Person?',
+                                eps_number: '1',
+                                parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
+                                id: '001',
+                                tags: 'covid-19 health'
+                            })
+                            @@include('./html/episodeCard.html', {
+                                parent: 'latest-episodes',
+                                title: 'Tesla Autopilot Controversy',
+                                eps_number: '5',
+                                parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
+                                id: '003',
+                                tags: 'automation tech'
+                            })
+                            @@include('./html/episodeCard.html', {
+                                parent: 'latest-episodes',
+                                title: "Women's Rights? Is it alright?",
+                                eps_number: '4',
+                                parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
+                                id: '005',
+                                tags: "womens's_rights business"
+                            })
+                            @@include('./html/episodeCard.html', {
+                                parent: 'latest-episodes',
+                                title: 'How to Deal with Self–Confidence',
+                                eps_number: '3',
+                                parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
+                                id: '002',
+                                tags: 'news health'
+                            })
+                            @@include('./html/episodeCard.html', {
+                                parent: 'latest-episodes',
+                                title: 'Type of Social Classes of People',
+                                eps_number: '2',
+                                parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
+                                id: '006',
+                                tags: 'social-class wealth'
+                            })
+                            @@include('./html/episodeCard.html', {
+                                parent: 'latest-episodes',
+                                title: 'Pandemic Becoming Endemic',
+                                eps_number: '6',
+                                parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
+                                id: '004',
+                                tags: 'covid-19 health'
+                            })
+                        </div>
+                    </div>
+                </div>
+               </section>
             </main>
             @@include('./html/footer.html')
         </div>

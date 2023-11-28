@@ -77,3 +77,27 @@
     @extend .episode__tag;
     font-size: 14px;
 }
+
+.latest-episodes {
+    background-color: #fff;
+}
+
+.latest-episodes__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 20px;
+    border-bottom: 1.5px solid var(--color-davys-grey);
+    margin-top: 100px;
+
+    & > * {
+        font-size: 22px;
+        font-weight: 700;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    & .latest-episodes__tab_active {
+        color: var(--color-vermillion);
+    }
+}
