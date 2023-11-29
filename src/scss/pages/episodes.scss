@@ -82,7 +82,7 @@
     background-color: #fff;
 }
 
-.latest-episodes__tabs {
+.tabs {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -99,12 +99,12 @@
         cursor: pointer;
     }
 
-    & .latest-episodes__tab_active {
+    & .tab_active {
         color: var(--color-vermillion);
     }
 }
 
-.latest-episodes__episodes-block {
+.search-block {
     .sorry {
         grid-column: 1 / 3;
     }

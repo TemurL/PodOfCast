@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('./html/head.html', {
+        title: 'Articles'
+    })
+    <body class="body">
+        <div class="wrapper">
+            @@include('./html/header.html')
+            <main class="main" id="main">
+                <section class="hero articles__hero">
+                    <div class="container">
+                        <div class="hero__content">
+                            <h1 class="title hero__title">Articles <br> and <span class="accent-color-text">News</span></h1>
+                            <p class="parag hero__parag">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt <br>ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="latest-posts">
+                    <div class="container">
+                        <div class="latest-posts__content">
+                            <h2 class="title latest-posts__title">Latest Episodes</h2>
+                            <ul class="tabs latest-posts__tabs">
+                                <li class="tab latest-posts__tab tab_active">All</li>
+                                <li class="tab latest-posts__tab">Business</li>
+                                <li class="tab latest-posts__tab">News</li>
+                                <li class="tab latest-posts__tab">Tips and Tricks</li>
+                                <li class="tab latest-posts__tab">Podcast</li>
+                                <li class="tab latest-posts__tab">Productivity</li>
+                            </ul>
+                            <div class="article-and-news__cards search-block">
+                                @@include('./html/articleCard.html', {
+                                    parent: 'latest-posts',
+                                    category: 'podcast',
+                                    title: 'Setup your own podcast',
+                                    parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
+                                    tags: 'business startup',
+                                    date: 'Sep 14, 2021',
+                                    id: '001',
+                                    href: ''
+                                })                               
+                                @@include('./html/articleCard.html', {
+                                    parent: 'latest-posts',
+                                    category: 'TIPS & TRICK',
+                                    title: 'Doodle artwork 101',
+                                    parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
+                                    tags: 'art creative tips_and_tricks',
+                                    date: 'Sep 12, 2021',
+                                    id: '002',
+                                    href: ''
+                                })                              
+                                @@include('./html/articleCard.html', {
+                                    parent: 'latest-posts',
+                                    category: 'News',
+                                    title: 'Mother Nature Taking Over',
+                                    parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
+                                    tags: 'news nature',
+                                    date: 'Sep 10, 2021',
+                                    id: '003',
+                                    href: ''
+                                })
+                                @@include('./html/articleCard.html', {
+                                    parent: 'latest-posts',
+                                    category: 'PRODUCTIVITY',
+                                    title: 'How to Be Productive',
+                                    parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
+                                    tags: 'productivity mindset',
+                                    date: 'Sep 8, 2021',
+                                    id: '004',
+                                    href: ''
+                                })
+                            </div>
+                        </div>
+                    </div>
+                   </section>
+            </main>
+            @@include('./html/footer.html')
+        </div>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

@@ -544,7 +544,8 @@
                                     eps_number: '1',
                                     parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                     id: '001',
-                                    tags: 'covid-19 health'
+                                    tags: 'covid-19 health',
+                                    href: ''
                                 })
                                 @@include('./html/episodeCard.html', {
                                     parent: 'latest-episodes',
@@ -552,7 +553,8 @@
                                     eps_number: '5',
                                     parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                     id: '003',
-                                    tags: 'automation tech'
+                                    tags: 'automation tech',
+                                    href: ''
                                 })
                                 @@include('./html/episodeCard.html', {
                                     parent: 'latest-episodes',
@@ -560,7 +562,8 @@
                                     eps_number: '4',
                                     parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                     id: '005',
-                                    tags: "womens's_rights"
+                                    tags: "womens's_rights",
+                                    href: ''
                                 })
                                 @@include('./html/episodeCard.html', {
                                     parent: 'latest-episodes',
@@ -568,7 +571,8 @@
                                     eps_number: '3',
                                     parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                     id: '002',
-                                    tags: 'self-esteem health'
+                                    tags: 'self-esteem health',
+                                    href: ''
                                 })
                                 @@include('./html/episodeCard.html', {
                                     parent: 'latest-episodes',
@@ -576,7 +580,8 @@
                                     eps_number: '2',
                                     parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                     id: '006',
-                                    tags: 'social-class wealth'
+                                    tags: 'social-class wealth',
+                                    href: ''
                                 })
                                 @@include('./html/episodeCard.html', {
                                     parent: 'latest-episodes',
@@ -584,7 +589,8 @@
                                     eps_number: '6',
                                     parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                     id: '004',
-                                    tags: 'covid-19 health'
+                                    tags: 'covid-19 health',
+                                    href: './episodes.html'
                                 })
                             </div>
                             <a href="./episodes.html" class="button button_big button_filled button_shadow recent-episodes__button">browse all episodes</a>
@@ -668,28 +674,26 @@
                         <h2 class="title article-and-news__title">Article and News</h2>
                         <p class="parag article-and-news__parag">News, tips, tricks and more</p>
                         <div class="article-and-news__cards">
-                            <a href="">
-                                @@include('./html/articleCard.html', {
-                                    parent: 'article-and-news',
-                                    category: 'podcast',
-                                    title: 'Setup your own podcast',
-                                    parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
-                                    tags: 'business startup',
-                                    date: 'Sep 14, 2021',
-                                    id: '001'
-                                })
-                            </a>
-                            <a href="">
-                                @@include('./html/articleCard.html', {
-                                    parent: 'article-and-news',
-                                    category: 'TIPS & TRICK',
-                                    title: 'Doodle artwork 101',
-                                    parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
-                                    tags: 'art creative tips_and_tricks',
-                                    date: 'Sep 12, 2021',
-                                    id: '002'
-                                })
-                            </a>
+                            @@include('./html/articleCard.html', {
+                                parent: 'article-and-news',
+                                category: 'podcast',
+                                title: 'Setup your own podcast',
+                                parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
+                                tags: 'business startup',
+                                date: 'Sep 14, 2021',
+                                id: '001',
+                                href: ''
+                            })
+                            @@include('./html/articleCard.html', {
+                                parent: 'article-and-news',
+                                category: 'TIPS & TRICK',
+                                title: 'Doodle artwork 101',
+                                parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...',
+                                tags: 'art creative tips_and_tricks',
+                                date: 'Sep 12, 2021',
+                                id: '002',
+                                href: ''
+                            })
                         </div>
                         <a class="button button_big button_filled button_shadow article-card__button" href="">browse all</a>
                     </div>

@@ -1,8 +1,8 @@
 export const episodesTabSerch = () => {
-    if (document.title != 'Episodes') return console.log('no tabs');
-    const tabs = document.querySelectorAll('.latest-episodes__tab');
-    const episodes = document.querySelectorAll('.latest-episodes__episode');
-    const episodesList = document.getElementsByClassName('episodes-block')[0];
+    if (document.title != 'Episodes' && document.title != 'Articles') return console.log('no tabs');
+    const tabs = document.querySelectorAll('.tab');
+    const episodes = document.querySelectorAll('.search-item');
+    const episodesList = document.getElementsByClassName('search-block')[0];
 
     const resetEpisodesList = (matchEpisodes) => {
         episodesList.innerHTML = '';
@@ -10,7 +10,7 @@ export const episodesTabSerch = () => {
             let parag = document.createElement('p');
             parag.classList.add('parag');
             parag.classList.add('sorry');
-            parag.textContent = 'Sorry, there are no podcasts matching this tag';
+            parag.textContent = 'Sorry, there are no items matching this tag';
             episodesList.appendChild(parag);
         } else {
             matchEpisodes.forEach(e => episodesList.appendChild(e));
@@ -25,9 +25,9 @@ export const episodesTabSerch = () => {
     } 
 
     const switchActiveTab = (clicked) => {
-        let active = document.querySelector('.latest-episodes__tab_active');
-        active.classList.remove('latest-episodes__tab_active');
-        clicked.classList.add('latest-episodes__tab_active');
+        let active = document.querySelector('.tab_active');
+        active.classList.remove('tab_active');
+        clicked.classList.add('tab_active');
     }
 
     const clickHandler = (e) => {

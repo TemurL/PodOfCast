@@ -102,23 +102,24 @@
                 <div class="container">
                     <div class="latest-episodes__content">
                         <h2 class="title latest-episodes__title">Latest Episodes</h2>
-                        <ul class="latest-episodes__tabs">
-                            <li class="latest-episodes__tab latest-episodes__tab_active">All</li>
-                            <li class="latest-episodes__tab">Business</li>
-                            <li class="latest-episodes__tab">Wealth</li>
-                            <li class="latest-episodes__tab">Education</li>
-                            <li class="latest-episodes__tab">Health</li>
-                            <li class="latest-episodes__tab">News</li>
-                            <li class="latest-episodes__tab">Tech</li>
+                        <ul class="tabs latest-episodes__tabs">
+                            <li class="tab latest-episodes__tab tab_active">All</li>
+                            <li class="tab latest-episodes__tab">Business</li>
+                            <li class="tab latest-episodes__tab">Wealth</li>
+                            <li class="tab latest-episodes__tab">Education</li>
+                            <li class="tab latest-episodes__tab">Health</li>
+                            <li class="tab latest-episodes__tab">News</li>
+                            <li class="tab latest-episodes__tab">Tech</li>
                         </ul>
-                        <div class="episodes-block latest-episodes__episodes-block">
+                        <div class="episodes-block latest-episodes__episodes-block search-block">
                             @@include('./html/episodeCard.html', {
                                 parent: 'latest-episodes',
                                 title: 'Are you a Perplexed Mind Person?',
                                 eps_number: '1',
                                 parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                 id: '001',
-                                tags: 'covid-19 health'
+                                tags: 'covid-19 health',
+                                href: ''
                             })
                             @@include('./html/episodeCard.html', {
                                 parent: 'latest-episodes',
@@ -126,7 +127,8 @@
                                 eps_number: '5',
                                 parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                 id: '003',
-                                tags: 'automation tech'
+                                tags: 'automation tech',
+                                href: ''
                             })
                             @@include('./html/episodeCard.html', {
                                 parent: 'latest-episodes',
@@ -134,7 +136,8 @@
                                 eps_number: '4',
                                 parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                 id: '005',
-                                tags: "womens's_rights business"
+                                tags: "womens's_rights business",
+                                href: ''
                             })
                             @@include('./html/episodeCard.html', {
                                 parent: 'latest-episodes',
@@ -142,7 +145,8 @@
                                 eps_number: '3',
                                 parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                 id: '002',
-                                tags: 'news health'
+                                tags: 'news health',
+                                href: ''
                             })
                             @@include('./html/episodeCard.html', {
                                 parent: 'latest-episodes',
@@ -150,7 +154,8 @@
                                 eps_number: '2',
                                 parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                 id: '006',
-                                tags: 'social-class wealth'
+                                tags: 'social-class wealth',
+                                href: ''
                             })
                             @@include('./html/episodeCard.html', {
                                 parent: 'latest-episodes',
@@ -158,7 +163,8 @@
                                 eps_number: '6',
                                 parag: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.',
                                 id: '004',
-                                tags: 'covid-19 health'
+                                tags: 'covid-19 health',
+                                href: ''
                             })
                         </div>
                     </div>
