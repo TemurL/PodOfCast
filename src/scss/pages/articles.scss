@@ -1,3 +1,24 @@
 .latest-posts {
     background-color: #fff;
 }
+
+.search-article-form {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.search-article-input {
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: relative;
+    transform: translateY(130%);
+    width: clamp(250px, 500px, 90vw);
+    line-height: 160%;
+    border: 1.5px solid black;
+    border-radius: 16px;
+    box-shadow: 6px 6px 0px 0px #81ADC8;
+    padding: 24px 0 24px 90px;
+    background-image: url('../img/icons/Search.svg');
+    background-position-y: center;
+    background-position-x: 40px;
+    background-repeat: no-repeat;
+}
