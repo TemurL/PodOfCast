@@ -22,3 +22,151 @@
     background-position-x: 40px;
     background-repeat: no-repeat;
 }
+
+.doodle-artwork__hero {
+    .hero__title {
+        font-size: 59px;
+        line-height: 120%;
+        margin-top: 10px;
+        letter-spacing: normal;
+    }
+
+    background-position-x: -300px, calc(100% - 60px);
+}
+
+.hero__date-back-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 80px 60px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    color: var(--color-davys-grey);
+    img {
+        vertical-align: bottom;
+    }
+}
+
+.hero__category {
+    display: block;
+    text-align: center;
+    color: var(--color-vermillion);
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.hero__tags {
+    text-align: center;
+}
+
+.hero__content {
+    .socials {
+        text-align: center;
+        margin-block-start: 50px;
+    }
+}
+
+.big-img {
+    padding: 0;
+
+    img {
+        width: 100%;
+        display: block;
+        // max-width: 1400px;
+        // margin: 0 auto;
+    }
+}
+
+.description {
+    background-color: #fff;
+}
+
+.description__text-content {
+    columns: 250px 2;
+    margin-block: 60px;
+    hr {
+        column-span: all;
+    }
+    .parag {
+        text-align: start;
+        font-size: 14px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.description__review {
+    @extend .tips__review;
+    margin-block-start: 100px;
+}
+
+.examples {
+    background-color: #fff;
+    padding-top: 0;
+}
+
+.examples__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 20px;
+    gap: 50px;
+
+    & > * {
+        flex: 1;
+    }
+
+    ul, ol {
+        list-style: disc;
+        @extend .parag;
+        text-align: start;
+        b {
+            color: black;
+        }        
+    }
+
+    ol {
+        list-style: auto;
+    }
+
+    li {
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::marker {
+            color: var(--color-vermillion);
+            font-weight: 700;
+        }
+    }
+}
+
+.examples__title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.examples__bullet-img,
+.examples__number-img {
+    min-width: 250px;
+    height: 400px;
+    margin-top: 130px;
+    background-image: url('../img/Doodle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.examples__bullet-img {
+    background-image: url('../img/Doodle.png');
+}
+.examples__number-img {
+    background-image: url('../img/Doodle-2.png');
+}
+
+.doodle-artwork__article-and-news {
+    background-color: var(--color-champagne);
+}

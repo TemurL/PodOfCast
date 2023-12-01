@@ -555,6 +555,7 @@ path {
     border-radius: 8px;
     border: 2px solid black;
     transition: 0.3s;
+    background-color: #fff;
     &:hover {
         box-shadow: 10px 10px 0px 0px #000;
         .article-card__title {
@@ -613,10 +614,21 @@ path {
         background-image: url('../img/article-cards/img-1.png');
     }
 }
+
+@keyframes jumpingCard {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
 #article-card_002 {
     .article-card__img {
         background-image: url('../img/article-cards/img-2.png');
     }
+    transition: 0.3s;
+    animation: jumpingCard 1s ease-in-out;
+    animation-iteration-count: infinite;
+    transform: translateY(0px);
 }
 #article-card_003 {
     .article-card__img {

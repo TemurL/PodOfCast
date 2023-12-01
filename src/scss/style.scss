@@ -44,7 +44,7 @@ a {
     }
 }
 
-ul {
+ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -375,11 +375,13 @@ hr {
 }
 
 .footer__downblock-1 {
+    flex-basis: 200px;
+}
+
+.socials {
     svg:hover path {
         fill: var(--color-vermillion);
     }
-
-    flex-basis: 200px;
 }
 
 .footer__downblock-2 {
