@@ -425,3 +425,52 @@ hr {
 @import './pages/episodes.scss';
 @import './pages/articles.scss';
 @import './media.scss';
+
+
+.modal {
+
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 20px 10px #00000066;
+    border-radius: 8px;
+
+    form {
+        padding-inline: 3rem;
+        padding-block: 1rem 2rem;
+        max-width: 532px;
+        background-color: #fff;
+    }
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.32);
+    }
+
+    .modal__close {
+        position: relative;
+        right: -2rem;
+        display: block;
+        margin-left: auto;
+        background-color: transparent;
+        margin-block-end: 1rem;
+        border: none;
+        padding: 0;
+    }
+
+    .modal__input {
+        display: block;
+        width: 100%;
+        // max-width: 500px;
+        margin: 0 auto;
+        font-family: "MontserratAlternates", sans-serif;
+        line-height: 160%;
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1.5px solid black;
+        margin-block: 2.5rem;
+    }
+
+    .modal__submit {
+        margin: 0 auto;
+    }
+}
