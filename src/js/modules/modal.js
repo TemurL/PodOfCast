@@ -18,16 +18,26 @@ export const modal = () => {
         return parag
     }
 
+    const deleteParag = () => {
+        let p = modal.querySelector('p');
+        if (p) p.remove();
+    }
+
     closeBtn.addEventListener('click', (e) => {
+        deleteParag();
+        modal.children[0].addEventListener('submit', () => {
+            return false;
+        })
         modal.close();
+        document.body.classList.remove('scroll-lock');
     })
 
-    modal.addEventListener('submit', (e) => {
-        e.preventDefault();
+    modal.children[0].addEventListener('submit', (e) => {
+        // e.preventDefault();
         console.log('submited');
-        let p = modal.querySelector('p');
-        console.log(p);
-        if (p) p.remove();
+        deleteParag();
+        let email = modal.children[0].elements[1].value;
+        alert(`Done. You've subscribed via Email: ${email} !`);
         document.body.classList.remove('scroll-lock');
         modal.close();
         footer.insertAdjacentElement('beforeend', modal);
