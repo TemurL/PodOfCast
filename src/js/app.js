@@ -6,6 +6,7 @@ import { articleCardSetTags } from './modules/articleCardSetTags.js';
 import { episodesTabSerch } from './modules/episodesTabSerch.js';
 import { articlesTitleSearch } from './modules/articlesTitleSearch.js';
 import { modal } from './modules/modal.js';
+import { getInTouchForm } from './modules/getInTouchForm.js';
 
 TLFunc.isWebp()
 
@@ -16,3 +17,4 @@ articleCardSetTags();
 episodesTabSerch();
 articlesTitleSearch();
 modal();
+getInTouchForm();

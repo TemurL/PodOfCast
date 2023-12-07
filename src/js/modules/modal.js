@@ -3,7 +3,6 @@ export const modal = () => {
     const modal = document.querySelector('dialog.modal_01');
     const closeBtn = document.querySelector('.modal__close');
     const footer = document.querySelector('.footer');
-    console.log(callBtn);
 
     const clickHandler = (e) => {
         document.body.classList.add('scroll-lock');
@@ -33,7 +32,7 @@ export const modal = () => {
     })
 
     modal.children[0].addEventListener('submit', (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         console.log('submited');
         deleteParag();
         let email = modal.children[0].elements[1].value;
