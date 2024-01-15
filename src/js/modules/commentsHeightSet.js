@@ -1,17 +1,17 @@
 export const commentsHeightSet = () => {
-    setTimeout(() => {
-        let elemClass;
-        let commentHeightArr;
 
-        document.title === 'Main' ? elemClass = 'comments__card' : elemClass = 'our-sponsors__card';
-        
-        commentHeightArr = Array.from(document.getElementsByClassName(elemClass)).map(comment => comment.offsetHeight);
-        let maxHeight = `${Math.max.apply(null, commentHeightArr)}px`;
-        Array.from(document.getElementsByClassName('comments__card')).forEach(card => {
-            if (window.innerWidth > 768) return
-            card.style.height = maxHeight
-        });
+    const resizeObserver = new ResizeObserver((entries, observer) => {
+        entries.forEach(element => {
+            let slideMaxHeight = Math.max(...Array.from(element.target.children).map(el => el.clientHeight));
+            element.target.style.height = `${slideMaxHeight + 20}px`;
+        })
+    })
 
-        document.title === 'Main' ? document.getElementsByClassName('comments__cards')[0].style.height = maxHeight : document.getElementsByClassName('our-sponsors__cards')[0].style.height = maxHeight;
-    },100)
+    const sliderMain = document.getElementsByClassName('comments__cards')[0];
+    const sliderSpons = document.getElementsByClassName('our-sponsors__cards')[0]
+
+    console.log('1')
+    if (!sliderMain && !sliderSpons) return
+    console.log('2')
+    resizeObserver.observe(document.querySelector('.comments__cards, .our-sponsors__cards'));
 }
